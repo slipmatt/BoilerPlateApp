@@ -1,0 +1,37 @@
+﻿<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>Modal Magic</h3>
+</div>
+
+    </div>
+
+        <div class="modal-body">
+            <div class="row-fluid">
+                <div class="control-group">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Sample Modal
+                        </dt>
+                        <dd>
+                            BoilerPlate Modal
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+<div class="modal-footer">
+    @using (Html.BeginForm("MakeASuccessFulToast", "Home", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true)
+        @Html.AntiForgeryToken()
+        <input class="btn btn-success" type="submit" value="Pop a Successful Toast"/>
+    }
+    @using (Html.BeginForm("MakeAnUnsuccessFulToast", "Home", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true)
+        @Html.AntiForgeryToken()
+        <input class="btn btn-danger" type="submit" value="Pop an Error Toast" />
+    }
+</div>
+

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC BoilerPlate</h1>
+    <p class="lead">ASP.NET MVC BoilerPlateApp is a predefined Boilerplate template to boost your roject Start up.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started with the boiler tamplate Modal</h2>
+        <p>
+            @Html.ActionLink("Pop A Modal", "Modal", "Home", new { id = 1 }, new { data_modal = "", @class = "btn btn-xs btn-info" })
+        </p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>Make a Toast</h2>
+        <p>
+            
+        </p>
+        <p>
+           Example Toasts in the Modal, check out the Base Controller for more Toast Types
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Font Awesome</h2>
+        <p>@{
+               <i>@Ajax.ActionLink(" ", "", "", new { ID = 1 }, null, new { @class = "fa fa-upload", @style = "font-size:15px;color:green;" })</i>
+               <i>@Ajax.ActionLink(" ", "", "", new { ID = 1 }, null, new { @class = "fa fa-bell", @style = "font-size:15px;color:blue;" })</i>
+               <i>@Ajax.ActionLink(" ", "", "", new { ID = 1 }, null, new { @class = "fa fa-youtube-square", @style = "font-size:15px;color:red;" })</i>
+            <i>@Ajax.ActionLink(" ", "", "", new { ID = 1 }, null, new { @class = "fa fa-wifi", @style = "font-size:15px;color:black;" })</i>
+        }</p>
+        <p><a class="btn btn-default" href="http://fontawesome.io/cheatsheet/" target="_blank" >Learn more &raquo;</a></p>
+    </div>
+</div>
